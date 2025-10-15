@@ -1,0 +1,31 @@
+use_frameworks!
+
+platform :ios, '9.0'
+source 'https://github.com/CocoaPods/Specs.git'
+source 'http://bj.gitlab.cnlive.com/ios-team/CNLiveRepos.git'
+
+target 'CNLiveDownloadManager_Example' do
+  pod 'CNLiveDownloadManager', :path => '../'
+  pod 'CNLiveTripartiteManagement/FMDB'
+  pod 'CNLiveBaseKit'
+  pod 'CNLiveTripartiteManagement/MJExtension'
+  pod 'CNLiveBaseTools'
+  pod 'CNLiveEnvironmentConfiguration'
+  pod 'CNLiveBusinessTools'
+  pod 'CNLiveBaseKit'
+  pod 'CNLiveRequestBastKit'
+  pod 'CNLiveTripartiteManagement/QMUIKit'
+  target 'CNLiveDownloadManager_Tests' do
+    inherit! :search_paths
+
+    pod 'CNLiveTripartiteManagement/FMDB'
+    pod 'CNLiveBaseKit'
+    pod 'CNLiveTripartiteManagement/MJExtension'
+    pod 'CNLiveEnvironmentConfiguration'
+    pod 'CNLiveBusinessTools'
+    pod 'CNLiveBaseKit'
+    pod 'CNLiveRequestBastKit'
+    pod 'CNLiveTripartiteManagement/QMUIKit'
+    pod 'CNLiveBaseTools'
+  end
+end
